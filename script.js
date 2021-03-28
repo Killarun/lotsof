@@ -149,3 +149,17 @@ function calcAvgAge(array) {
 
 console.log(calcAvgAge(data));
 
+
+
+const arr = [17, 23, 31, 44, 59];
+
+doubleNumber(arr); // возвращает [34,46,62,88,118];
+
+
+function doubleNumber(array) {
+  return array.map(function(num) {  //возвращаем массив и умножаем на 2.
+    return num * 2;
+  });
+
+}
+
