@@ -131,3 +131,21 @@ const getSimilarOffers = (quantity) => new Array(quantity).fill(null).map(create
 
 export {getSimilarOffers, createOffer};
 
+const data = [
+  {name: "Саша", age: 19},
+  {name: "Катя", age: 21},
+  {name: "Миша", age: 17},
+  {name: "Федя", age: 23},
+  {name: "Клава", age: 22}
+];
+
+function calcAvgAge(array) { 
+  let sum = 0; //ставим переменну в 0
+  for (const person of array) { //перебираем массив
+    sum += person.age; //сумируем возраст
+  }
+  return sum / array.length; //возвращаем возраст и делим на длину массива, получаем среднее
+}
+
+console.log(calcAvgAge(data));
+
